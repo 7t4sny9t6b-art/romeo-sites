@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romeoflowers.kz/astana/sitemap.xml
+Sitemap: https://romeoflowers.kz/almaty/sitemap.xml
