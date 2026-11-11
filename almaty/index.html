@@ -146,6 +146,10 @@ header{position:sticky;top:0;z-index:20;background:rgba(236,231,225,.92);backdro
 @media(max-width:860px){.why .grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.why .grid{grid-template-columns:1fr}}
 
+/* cities */
+.cities{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.cities a{padding:7px 13px;border-radius:999px;border:1px solid var(--line);font-size:13.5px;text-decoration:none;color:var(--ink)}
+.cities a.on{background:var(--sage);border-color:var(--sage);color:#fff;font-weight:600}
 /* lang switcher */
 .lang{display:flex;gap:2px;font-size:13px;font-weight:600;letter-spacing:.04em}
 .lang a{padding:7px 9px;border-radius:999px;text-decoration:none;color:var(--muted)}
@@ -278,6 +282,7 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
 <!-- SHOPS -->
 <section class="shops" id="shops">
   <div class="wrap">
+    <nav class="cities"><a href="../astana/">Астана</a><a href="../almaty/" class=on aria-current=page>Алматы</a><a href="../atyrau/">Атырау</a><a href="../karaganda/">Караганда</a></nav>
     <div class="eyebrow">Цветы в Алматы · с 2015 года</div>
     <h1>Если цветы, то только Romeo</h1>
     <p class="lead">Магазин работает круглосуточно. Напишите нам: менеджер ответит за 3 минуты, подберёт букет и пришлёт фото перед доставкой.</p>
@@ -324,7 +329,7 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-10-28T15:03:43+05:00" data-ts="1793181823">28 октября, 15:03</time></div><p>Всегда заказываю цветы у Romeo в Астане и Алматы, никогда не подводят, цветы свежие и цены адекватные. Рекомендую 👍🏼</p><div class="who"><b>Nat L</b></div></div>
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-10-26T23:15:27+05:00" data-ts="1793038527">26 октября, 23:15</time></div><p>Хочу выразить огромную благодарность флористу Гүлбақыт и менеджеру Гүлназ за профессионализм и отличную работу! 🔥<br><br>Заказ отработали максимально оперативно, на все сообщения отвечали чётко, грамотно и без лишних ожиданий. Видно, что люди действительно знают своё дело, ценят время…</p><div class="who"><b>Anuar</b></div></div>
     </div>
-    <p class="rmeta"><span class="live">Свежие отзывы из 2ГИС</span><span>Обновлено: 11 ноября, 12:33</span><a href="https://2gis.kz/almaty/geo/70000001081063192" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a></p><script>(function(){var L={"now": "только что", "m": "{n} мин назад", "h": "{n} ч назад", "d": "{n} дн назад"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
+    <p class="rmeta"><span class="live">Свежие отзывы из 2ГИС</span><span>Обновлено: 11 ноября, 12:40</span><a href="https://2gis.kz/almaty/geo/70000001081063192" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a></p><script>(function(){var L={"now": "только что", "m": "{n} мин назад", "h": "{n} ч назад", "d": "{n} дн назад"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
   </div>
 </section>
 

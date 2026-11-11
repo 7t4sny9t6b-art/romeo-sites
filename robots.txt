@@ -3,3 +3,5 @@ Allow: /
 
 Sitemap: https://romeoflowers.kz/astana/sitemap.xml
 Sitemap: https://romeoflowers.kz/almaty/sitemap.xml
+Sitemap: https://romeoflowers.kz/atyrau/sitemap.xml
+Sitemap: https://romeoflowers.kz/karaganda/sitemap.xml

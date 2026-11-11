@@ -178,6 +178,10 @@ header{position:sticky;top:0;z-index:20;background:rgba(236,231,225,.92);backdro
 @media(max-width:860px){.why .grid{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.why .grid{grid-template-columns:1fr}}
 
+/* cities */
+.cities{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.cities a{padding:7px 13px;border-radius:999px;border:1px solid var(--line);font-size:13.5px;text-decoration:none;color:var(--ink)}
+.cities a.on{background:var(--sage);border-color:var(--sage);color:#fff;font-weight:600}
 /* lang switcher */
 .lang{display:flex;gap:2px;font-size:13px;font-weight:600;letter-spacing:.04em}
 .lang a{padding:7px 9px;border-radius:999px;text-decoration:none;color:var(--muted)}
@@ -310,6 +314,7 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
 <!-- SHOPS -->
 <section class="shops" id="shops">
   <div class="wrap">
+    <nav class="cities"><a href="../astana/" class=on aria-current=page>Астана</a><a href="../almaty/">Алматы</a><a href="../atyrau/">Атырау</a><a href="../karaganda/">Караганда</a></nav>
     <div class="eyebrow">Цветы в Астане · с 2015 года</div>
     <h1>Три магазина, все&nbsp;круглосуточно</h1>
     <p class="lead">Пишите в ближайший: менеджер ответит, подберёт букет и пришлёт фото перед доставкой.</p>
@@ -387,7 +392,7 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-08T16:57:34+05:00" data-ts="1794139054">8 ноября, 16:57</time></div><p>Благодарю цветы доставили во время. Букет шикарный ❤️</p><div class="who"><b>Айжан</b><span>Мангилик Ел 42</span></div></div>
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-07T20:29:35+05:00" data-ts="1794065375">7 ноября, 20:29</time></div><p>көңілім толды🌷🔥</p><div class="who"><b>Алина Мамадали</b><span>Майлина 16/6</span></div></div>
     </div>
-    <p class="rmeta"><span class="live">Свежие отзывы из 2ГИС</span><span>Обновлено: 11 ноября, 12:33</span><a href="https://go.2gis.com/784i6" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a></p><script>(function(){var L={"now": "только что", "m": "{n} мин назад", "h": "{n} ч назад", "d": "{n} дн назад"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
+    <p class="rmeta"><span class="live">Свежие отзывы из 2ГИС</span><span>Обновлено: 11 ноября, 12:40</span><a href="https://go.2gis.com/784i6" target="_blank" rel="noopener">Все отзывы в 2ГИС →</a></p><script>(function(){var L={"now": "только что", "m": "{n} мин назад", "h": "{n} ч назад", "d": "{n} дн назад"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
   </div>
 </section>
 
