@@ -255,6 +255,10 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
 
 }
 </style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window,document,'script','https://mc.yandex.ru/metrika/tag.js?id=114210278','ym');ym(114210278,'init',{ssr:true,webvisor:true,clickmap:true,accurateTrackBounce:true,trackLinks:true});</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/114210278" style="position:absolute;left:-9999px;" alt=""></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -320,11 +324,12 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
       <div class="score"></div>
     </div>
     <div class="rgrid">
+      <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-11T13:28:32+05:00" data-ts="1794385712">11 қараша, 13:28</time></div><p>❤️‍🔥❤️‍🔥❤️‍🔥</p><div class="who"><b>Zhazira Khudaibergen</b></div></div>
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-11T11:58:12+05:00" data-ts="1794380292">11 қараша, 11:58</time></div><p>Цветочки очень красивые, стоят долго 😊</p><div class="who"><b>Li Li</b></div></div>
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-11T10:53:00+05:00" data-ts="1794376380">11 қараша, 10:53</time></div><p>Отличный цветочный, качественные цветы и хорошее обслуживание 🫶</p><div class="who"><b>Anastasia Z</b></div></div>
       <div class="review"><div class="rtop"><div class="stars">★★★★★</div><time datetime="2026-11-11T10:43:21+05:00" data-ts="1794375801">11 қараша, 10:43</time></div><p>Отличная цветочная, все понравилось. <br>Отдельное спасибо за отзывчивый сервис👍</p><div class="who"><b>Dastan Bektursunov</b></div></div>
     </div>
-    <p class="rmeta"><span class="live">2ГИС-тегі жаңа пікірлер</span><span>Жаңартылды: 11 қараша, 12:54</span><a href="https://2gis.kz/karaganda/firm/70000001119265066" target="_blank" rel="noopener">2ГИС-тегі барлық пікірлер →</a></p><script>(function(){var L={"now": "жаңа ғана", "m": "{n} мин бұрын", "h": "{n} сағ бұрын", "d": "{n} күн бұрын"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
+    <p class="rmeta"><span class="live">2ГИС-тегі жаңа пікірлер</span><span>Жаңартылды: 12 қараша, 13:42</span><a href="https://2gis.kz/karaganda/firm/70000001119265066" target="_blank" rel="noopener">2ГИС-тегі барлық пікірлер →</a></p><script>(function(){var L={"now": "жаңа ғана", "m": "{n} мин бұрын", "h": "{n} сағ бұрын", "d": "{n} күн бұрын"},n=Date.now()/1e3;document.querySelectorAll(".review time[data-ts]").forEach(function(t){var s=n-+t.dataset.ts,x;if(s<0)return;if(s<60)x=L.now;else if(s<3600)x=L.m.replace("{n}",Math.floor(s/60));else if(s<86400)x=L.h.replace("{n}",Math.floor(s/3600));else if(s<7*86400)x=L.d.replace("{n}",Math.floor(s/86400));else return;t.innerHTML=t.textContent+' · <span class="ago">'+x+"</span>";});})();</script>
   </div>
 </section>
 
@@ -386,5 +391,18 @@ footer .bottom{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,25
 </footer>
 
 
+<script>
+/* Цели Метрики: нажатия на WhatsApp, телефон, 2ГИС, Instagram с городом и магазином */
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a'); if(!a||typeof ym!=='function')return;
+  var h=a.getAttribute('href')||'', g=null;
+  if(/wa\.me|whatsapp/.test(h))g='whatsapp'; else if(/^tel:/.test(h))g='phone';
+  else if(/2gis/.test(h))g='2gis'; else if(/instagram\.com/.test(h))g='instagram'; else if(/t\.me/.test(h))g='telegram';
+  if(!g)return;
+  var card=a.closest('.shop'), sec=a.closest('section,footer');
+  var shop=card?card.querySelector('h3').textContent.trim():(sec&&sec.classList.contains('complaint')?'жалоба':(sec&&sec.id)||'footer');
+  ym(114210278,'reachGoal',g,{city:'karaganda',shop:shop,lang:document.documentElement.lang});
+});
+</script>
 </body>
 </html>
